@@ -58,7 +58,7 @@
                         <a href="#about">Internships</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -66,18 +66,14 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
     <!-- Header -->
+    <div class="bgimg2" style="background-image: url(img/cover.jpg);"></div>
     <header>
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <h1 class="name">Jay Tayade</h1>
-                        <hr class="star-light">
-                        <span class="skills">Computer Science <br>University of Michigan<br>Class of 2019</span>
-                    </div>
+                <div class="col-md-12">
+
+                    <!-- <img class="img-responsive" src="img/20280414_1576447059080395_3833258245712547973_o (1).jpg" alt="" id="coverPhoto"> -->
                 </div>
             </div>
         </div>
@@ -217,13 +213,20 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
+                  <form action="https://formspree.io/jaytayade@outlook.com"
+                  method="POST">
+                  <input type="text" name="name">
+                  <input type="email" name="_replyto">
+                  <input type="submit" value="Send">
+                </form>
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" action="https://formspree.io/jaytayade@outlook.com"
+                    method="POST" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <input type="text" name="name" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>

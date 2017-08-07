@@ -53,7 +53,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #6699ff;
+  background-color: #00BFFF;
   color: white;
 }
 hr.star-primary {
@@ -68,16 +68,18 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #6699ff;
+  background: #00BFFF;
   color: white;
 }
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 header img {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0px;
+  image-resolution: snap;
+  padding: 0px;
 }
 header .intro-text .name {
   display: block;
@@ -92,8 +94,8 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   header .intro-text .name {
     font-size: 4.75em;
@@ -125,7 +127,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #6699ff;
+  color: #00BFFF;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -133,7 +135,7 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #6699ff;
+  background: #00BFFF;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
@@ -181,7 +183,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #6699ff;
+  background: #00BFFF;
   color: white;
 }
 @media (max-width: 767px) {
@@ -562,4 +564,15 @@ div#maincontent {
   #about .portfolio-item {
     margin: 0 0 30px;
   }
+}
+.bgimg2 {
+    background-position-y: -60px;
+    min-height: 600px;
+}
+bgimg1, .bgimg2, .bgimg3 {
+    position: relative;
+    /*background-attachment: fixed!important;*/
+    background-position: 50% -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
