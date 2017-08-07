@@ -572,7 +572,7 @@ div#maincontent {
 bgimg1, .bgimg2, .bgimg3 {
     position: relative;
     /*background-attachment: fixed!important;*/
-    background-position: 50% -100px;
+    background-position: 50% 20%;
     background-repeat: no-repeat;
     background-size: cover;
 }
